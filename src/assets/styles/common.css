@@ -1,0 +1,217 @@
+
+/* 禁止选中文本 */
+.usn{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    -o-user-select:none;
+    user-select:none;
+}
+
+/* 强制不换行 */
+.wn {
+    word-wrap:normal;
+    white-space:nowrap;
+}
+
+/* 强制换行 */
+.wb {
+    white-space:normal;
+    word-wrap:break-word;
+    word-break:break-all;
+}
+
+/*多行文字溢出 适用于webkit内核和移动端 */
+.wes {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+/*溢出部分省略号显示*/
+.ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.two-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+/*垂直居中*/
+.layout-qz{
+	display: flex;
+	align-items: center;
+}
+
+/*左右居中*/
+.layout-zy{
+	display: flex;
+	justify-content: center;
+}
+
+.layout-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*两边排列*/
+.layout-slide{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+/*两边不居中排列*/
+.layout-slide-top{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*上下排列*/
+.layout-sx{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/*横向左右垂直居中*/
+.layout-rc{
+	display: flex;
+  justify-content: center;
+	align-items: center;
+}
+
+/*纵向左右垂直居中*/
+.layout-cc{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*纵向左右垂直居中*/
+.layout-ct{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*清除浮动*/
+.clearfix::after{
+	content: '';
+	display:block;
+	width: 0;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+.wh100{
+	width: 100%;
+	height: 100%;
+}
+
+.w100{
+	width: 100%;
+}
+
+.full{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+
+.mc{color: #FF305D}
+
+.dc{color: #98999B}
+
+/*h2{font-size: 32px}*/
+.f15{font-size: .3rem}
+.f18{font-size: .36rem}
+.f20{font-size: 20px}
+.f22{font-size: 22px}
+.f24{font-size: 24px}
+.f25{font-size: 25px}
+.f26{font-size: 26px}
+.f28{font-size: 28px}
+.f30{font-size: 30px}
+.f34{font-size: 34px}
+.f36{font-size: 36px}
+.f40{font-size: 40px}
+.f50{font-size: 50px}
+.f59{font-size: 59px}
+.f100{font-size: 100px}
+.fb{font-weight: bold}
+
+input::-webkit-input-placeholder {color: #98999B}
+
+/*富文本格式样式，一般用于任务流程*/
+.task-require-text {
+  padding: 0 .4rem 0;
+  word-break: break-all;
+}
+.task-require-text p {
+  margin: .12rem 0;
+  font-size: .28rem;
+  color: #666666;
+  line-height: .4rem;
+  text-align: left;
+  word-break: break-all;
+}
+.task-require-text img {
+  display: block;
+  margin: 0 auto;
+  width: 5.1rem;
+  background: rgba(216, 216, 216, 1);
+  border-radius: .1rem;
+}
+
+/*各任务查看示例样式*/
+.task-View-examplesImg {
+  position: fixed;
+  right: 0;
+  bottom: 2.6rem;
+  z-index: 2;
+  width: 1.74rem;
+  height: .6rem;
+  line-height: .6rem;
+  background:rgba(255,255,255,1);
+  box-shadow:0 .04rem .08rem 0 rgba(0,0,0,0.08);
+  border-radius: .3rem 0 0 .3rem;
+  box-sizing: border-box;
+  font-size: .24rem;
+  color: #FD5177;
+  padding: .02rem .12rem 0 .2rem;
+  text-align: center;
+  transition: .5s;
+}
+
+.task-View-examplesImg>.check_img{
+  width: .36rem;
+  height: .32rem;
+}
+
+.hide-View-examplesBox{
+  transform: translateX(1.1rem);
+}
+
+.show-View-examplesBox{
+  transform: translateX(0);
+}
+
+
